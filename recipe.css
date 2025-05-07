@@ -3,7 +3,7 @@
     text-align: center;
     color: black;
     top: 0;
-    background-color:whitesmoke;
+    background-color: #f0eae3;
     z-index: 1000;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -18,7 +18,7 @@
 }
 .nav-links a {
     text-decoration: none;
-    color: palevioletred;
+    color: #6e8175;
     font-weight: bold;
 }
 .nav-links a:hover {
@@ -26,11 +26,13 @@
     color:black;
     cursor: pointer;
 }
-.recipe-section {
+/*.recipe-section {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-}
+    width: 100%;
+    padding: 0 20px;
+}*/
 .recipe-grid {
     display: flex;
     flex-direction: row;
@@ -38,10 +40,11 @@
     gap: 20px;
     flex-wrap: wrap;
     flex-grow: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .recipe-card {
-    background-color: whitesmoke;
+    background-color: #f0eae3;
     padding: 15px;
     border-radius: 10px;
     width: 250px;
@@ -49,26 +52,63 @@
     text-align: center;
 }
 .recipe-card button {
-    display: inline
-    padding 6px 12px;
-    background-color: whitesmoke;
+    padding: 6px 12px;
+    background-color: #f0eae3;
     color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer; 
 }
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
 .recipe-card button:hover {
     text-decoration: underline;
     font-weight: bold;
+    font-size: 12px;
 }
-.search-bar{
+.search-container {
+    width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+  }
+.search-bar button {
+        padding: 8px 16px;
+        height: 40px; /* ✅ match input height */
+        background-color: #eee;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #ece4d9;
 }
 footer {
     text-align: center;
     padding: 10px;
-    background-color: whitesmoke;
+    background-color: #f0eae3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }

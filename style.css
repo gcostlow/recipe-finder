@@ -1,6 +1,8 @@
 .sticky-header {
     position: sticky;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     color: black;
     top: 0;
     background-color: #f0eae3;
@@ -59,5 +61,15 @@ h1, h2 {
 
 .home-page {
     margin-bottom: 500px;
+}
+
+img {
+    position: absolute;
+    left: 5px;
+    width: 260px;
+    height: 145px;
+}
+header{
+    flex: 1;
 }
 
