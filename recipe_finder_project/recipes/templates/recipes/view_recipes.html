@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>View Recipes</title>
+    </head>
+    <body>
+        <h1>Recipes</h1>
+<ul>
+    {% for recipe in recipes %}
+        <li>
+            <h3>{{ recipe.name }}</h3>
+            <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+            <p><strong>Instructions:</strong> {{ recipe.instructions }}</p>
+            <p><strong>Prep time:</strong> {{ recipe.prep_time }} minutes</p>
+            <p><strong>Servings:</strong> {{ recipe.servings }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+    </body>
+</html>

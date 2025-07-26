@@ -1,9 +1,11 @@
 .sticky-header {
     position: sticky;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     color: black;
     top: 0;
-    background-color:whitesmoke;
+    background-color: #f0eae3;
     z-index: 1000;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -18,7 +20,7 @@
 }
 .nav-links a {
     text-decoration: none;
-    color: palevioletred;
+    color: #6e8175;
     font-weight: bold;
 }
 .nav-links a:hover {
@@ -27,15 +29,22 @@
     cursor: pointer;
 
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ece4d9;
+}
 footer {
     text-align: center;
     padding: 10px;
-    background-color: whitesmoke;
+    background-color: #f0eae3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 .about-page textarea {
     display: block;
+    background-color: #f0eae3;
     margin: 10px auto;
     width: 50%;
     height: 100px;
@@ -43,4 +52,9 @@ footer {
 }
 #comment {
     text-align: center;
+}
+h1, h2 {
+    font-family:'Dancing script';
+    font-weight: bold;
+    padding: 20px;
 }
